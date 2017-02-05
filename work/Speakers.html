@@ -1,0 +1,262 @@
+<html>
+
+<script src="aframe.js"></script>
+<script src="bmfont.js"></script>
+
+<body>
+	<a-scene>
+		<a-assets> 
+
+			<img id="drmani" src="img/drmani.jpg">
+			<img id="drmankad" src="img/drmankad.jpg">
+			<img id="drsid" src="img/drsid.jpg">
+			<img id="about" src="img/abt.png">
+			<img id="team" src="img/team.png">
+			<img id="floor" src="img/floor.jpg">
+			<img id="target" src="img/target.png">
+			<img id="register" src="img/register.png">
+			<img id="topics" src="img/topics.png">
+			<img id="drannie" src="img/drannie.jpg">
+			<img id="drmanjula" src="img/drmanjula.jpg">
+			<img id="drsudha" src="img/drsudha.jpg">
+			<img id="left" src="img/left.png">
+			<img id="right" src="img/right.png">			
+		
+		</a-assets>
+
+
+
+		<a-sky src="img/sky.jpg"></a-sky>
+		<!-- Placard ONE   -->
+
+		<a-entity geometry="primitive:plane ; height:1.5 ; width:1.12" material="color:grey" position="0 0.4 0">
+		
+		<a-entity bmfont-text="text: Dr.MANI" position="-0.1 0.5 0" scale="0.3 0.3 0."></a-entity>  <!--HEADING-->
+
+		<a-entity bmfont-text="text: Dept. of. Applied Mechanics, IIT Madras" position="-0.55 0.4 0" scale="0.3 0.3 0."></a-entity>
+
+		<a-plane src="#drmani" height="0.2" width="0.2" position="0 0.1 0.2"></a-plane> 	<!--IMAGE-->
+
+		<a-entity bmfont-text="text: Areas of Specialization:" position="-0.27 -0.10 0" scale="0.3 0.3 0."></a-entity>
+
+
+		<!--HIS / HER Specializations-->
+
+		<a-entity bmfont-text="text: 1.Haptics" position="-0.27 -0.2 0" scale="0.27 0.27 0."></a-entity>
+		<a-entity bmfont-text="text: 2.Virtual Reality" position="-0.27 -0.3 0" scale="0.27 0.27 0."></a-entity>
+		<a-entity bmfont-text="text: 3.Biomechanics" position="-0.27 -0.4 0" scale="0.27 0.27 0."></a-entity>
+		<a-entity bmfont-text="text: 4.Computer Graphics" position="-0.27 -0.5 0" scale="0.27 0.27 0."></a-entity>
+		<a-entity bmfont-text="text: 5.Computational Geometry" position="-0.27 -0.6 0" scale="0.27 0.27 0."></a-entity>
+
+		</a-entity>  <!--PLACARD ONE ENDS here-->
+
+
+
+
+
+
+		<!--PLACARD 2-->
+
+
+		<a-entity geometry="primitive:plane ; height:1.5; width:1.2" material="color:grey" position="-1.7 0.4 0" rotation="0 30 0">
+		
+		<a-entity bmfont-text="text:UTKARSH MANKAD" position="-0.1 0.5 0.2" scale="0.3 0.3 0.3"></a-entity>  <!--HEADING-->
+
+		<a-entity bmfont-text="text:Senior Technical Officer at CDAC Bangalore" position="-0.59 0.4 0" scale="0.3 0.3 0."></a-entity>
+
+
+		<a-plane src="#drmankad" height="0.2" width="0.2" position="0 0.1 0.2"></a-plane> 	<!--IMAGE-->
+
+		<a-entity bmfont-text="text: Areas of Specialization:" position="-0.27 -0.10 0" scale="0.3 0.3 0."></a-entity>
+
+
+		<!--HIS / HER Specializations-->
+
+		<a-entity bmfont-text="text: 1.Expertise in AR" position="-0.27 -0.2 0" scale="0.27 0.27 0."></a-entity>
+		<a-entity bmfont-text="text: 2.Mobile App using AR" position="-0.27 -0.3 0" scale="0.27 0.27 0."></a-entity>
+
+		</a-entity>  <!--PLACARD TWO ENDS here-->
+
+
+
+
+		<!--PLACARD 3-->
+
+
+		<a-entity geometry="primitive:plane ; height:1.5; width:1.2" material="color:grey" position="1.7 0.4 0" rotation="0 -30 0">
+		
+		<a-entity bmfont-text="text:Siddartha Denamsett" position="-0.3 0.5 0.2" scale="0.3 0.3 0.3"></a-entity>  <!--HEADING-->
+
+		<a-entity bmfont-text="text:Founder & Director, TEAMSID" position="-0.3 0.4 0" scale="0.3 0.3 0."></a-entity>
+
+
+		<a-plane src="#drsid" height="0.2" width="0.2" position="0 0.1 0.2"></a-plane> 	<!--IMAGE-->
+
+		<a-entity bmfont-text="text: Areas of Specialization:" position="-0.27 -0.10 0" scale="0.3 0.3 0."></a-entity>
+
+
+		<!--HIS / HER Specializations-->
+
+		<a-entity bmfont-text="text: 1.Game Development" position="-0.27 -0.2 0" scale="0.27 0.27 0."></a-entity>
+		<a-entity bmfont-text="text: 2.Gaming using AR/VR" position="-0.27 -0.3 0" scale="0.27 0.27 0."></a-entity>
+
+		</a-entity>  <!--PLACARD THREE ENDS here-->
+
+
+
+
+		<!-- THE PLACARD FOR ABOUT THE EVENT-->
+
+		<a-plane color="grey" rotation="0 -180 0" position="0 0.22 6" width="2">
+
+		<a-entity bmfont-text="text:ABOUT THE EVENT" position="-0.2 0.38 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+			<a-plane src="#about" position="-0.69 0.1 0.05" height="0.3" width="0.3"></a-plane>
+
+			<a-entity bmfont-text="text:The workshop is intended to provide more info about
+AR which overlays virual 3D graphics onto our view of real world and VR which immerses us in 360 degree views of new worlds with little or no sensory input.
+
+	The Challenge of of the VR and AR applications is to effectively communicate to users how the virtual world mimics real world.
+
+	The advent of AR and VR could lead us down very different paths in entertainment,gaming,communication and industry" position="-0.5 -0.3 0.05" scale="0.27 0.27 0."></a-entity>
+
+
+		</a-plane>
+
+		<!--PLACARD ABOUT EVENT ENDS HERE-->
+
+
+		<!--PLACARD FOR ABOUT AUDIENCE -->
+
+		<a-plane color="grey" rotation="0 -150 0" position="2 0.22 5.6" width="1.5">
+
+			<a-entity bmfont-text="text:TARGET AUDIENCE  & REGISTRATION" position="-0.5 0.38 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+			<a-plane src="#target" position="-0.5 0.19 0.05" height="0.3" width="0.3"></a-plane>
+
+			<a-entity bmfont-text="text:Faculty employed in institutions 
+affiliated to Anna University
+     Researchers who are willing to carry out
+research in VR/AR
+     Industry Delegates and Corporate 
+officials" position="-0.32 0.05 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+		<a-plane src="#register" position="-0.5 -0.27 0.05" height="0.3" width="0.3"></a-plane>
+
+			<a-entity bmfont-text="text:Free Registration
+Hurry Limited Seats!
+Last Date for registration:16.02.17
+Filled in application to be sent as 
+scanned soft copy as email to:
+vrardcseceg2017@gmail.com" position="-0.32 -0.35 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+		</a-plane>
+
+
+		<!--THE AUDIENCE PART ENDS HERE-->
+
+		<!--PLACARD FOR TOPICS COVERED-->
+
+		<a-plane color="grey" rotation="0 150 0" position="-2 0.22 5.6" width="1.7">
+
+			<a-entity bmfont-text="text:TOPICS COVERED" position="-0.2 0.38 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+			<a-plane src="#topics" position="-0.5 0.19 0.05" height="0.3" width="0.3"></a-plane>
+
+			<a-entity bmfont-text="text:*Approaches in user tracking and locomotion interfaces
+     *Design of VR interactive experiences
+research in VR/AR
+     *3D UI for Desktop VR
+     *Tangible and Haptics support for
+interaction with VR environment
+     *VR Healthcare / VR Cinema
+     *Social Media content sharing in VR
+     *New trends in VR apps hands on" position="-0.32 -0.17 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+			<a-entity bmfont-text="text:" position="-0.32 -0.35 0.05" scale="0.27 0.27 0.27"></a-entity>
+
+		</a-plane>
+
+	<!--THE PLACARD FOR TOPICS COVERED ENDS HERE-->
+
+
+	<!--THE MAIN ENTRANCE THEME IS  HERE-->
+
+
+	<a-plane color="grey" rotation="0 -90 0" position="4 0 3" width="5.5" height="3.2">
+
+		<a-entity bmfont-text="text:WORHSHOP ON VIRTUAL AND AUGMENTED REALITY" position="-1.5 1.1 0.40" scale="0.80 0.80 0.80"></a-entity>
+		
+		<a-entity bmfont-text="text:27th and 28th February 2017" position="-1.1 0.87 0.40" scale="0.80 0.80 0.80"></a-entity>
+
+		<a-entity bmfont-text="text:Venue:Turing Hall,DCSE,CEG" position="-1.1 0.72 0.40" scale="0.80 0.80 0.80"></a-entity>
+
+		<a-entity bmfont-text="text:Organized By" position="-0.5 0.57 0.3" scale="0.80 0.80 0.80"></a-entity>
+
+		<a-entity bmfont-text="text:Department Of Computer Science and Engineering" position="-1.7 0.39 0.3" scale="0.80 0.80 0.80"></a-entity>
+
+		<a-entity bmfont-text="text:CEG,GUINDY,ANNA UNIVERSITY,Chennai-600025" position="-1.5 0.20 0.3" scale="0.80 0.80 0.80"></a-entity>
+		
+		<a-plane src="#drmanjula" position="-0.9 -0.2 1" scale="0.4 0.4 0.4"></a-plane>
+		<a-entity bmfont-text="text:Convenor:
+Dr.MANJULA
+HOD,DCSE,CEG" position="-1.07 -0.57 1" scale="0.27 0.27 0.27"></a-entity>
+
+		<a-plane src="#drannie" position="-0.01 -0.2 1" scale="0.4 0.4 0.4"></a-plane>
+		<a-entity bmfont-text="text:Coordinator:
+Dr.ANNIE" position="-0.17 -0.55 1" scale="0.27 0.27 0.27"></a-entity>
+
+
+
+
+		<a-plane src="#drsudha" position="+0.89 -0.2 1" scale="0.4 0.4 0.4"></a-plane>
+		<a-entity bmfont-text="text:Coordinator:
+Dr.SUDHA" position="0.73 -0.55 1" scale="0.27 0.27 0.27"></a-entity>
+
+
+	</a-plane>
+
+
+	<a-plane color="grey" rotation="0 -90 0" position="3.7 0.36 0.37">
+		<a-plane src="#left" position="-0.21 0.28 0.08" scale="0.3 0.3 0.3"></a-plane>
+		<a-entity bmfont-text="text:USE YOUR LEFT ARROW KEY 
+AND MOUSE TO MOVE
+TO SPEAKERS SECTION" position="-0.35 -0.2 0.1" scale="0.5 0.5 0.5"></a-entity>
+
+	</a-plane>
+
+	<a-plane color="grey" rotation="0 -90 0" position="3.7 0.36 5.67">
+
+				<a-plane src="#right" position="0.25 0.28 0.03" scale="0.3 0.3 0.3"></a-plane>
+		<a-entity bmfont-text="text:USE YOUR RIGHT ARROW KEY 
+AND MOUSE TO MOVE TO
+KNOW ABOUT THE WORKSHOP" position="-0.7 -0.2 0.03" scale="0.5 0.5 0.5"></a-entity>
+
+	</a-plane>
+
+	<!--MAIN THEME ENDS HERE-->
+
+
+
+
+
+		<!-- SPHERE ENDS HERE-->
+			
+
+
+		<a-plane src="#floor" position="0 -1 0" rotation="-90 0 0" width="10" height="17"></a-plane>
+
+
+		<a-entity position="1.19 -1.7 3.07" rotation="0 -90 0">
+
+			<a-camera></a-camera>
+		
+		<a-entity>
+
+
+	</a-scene>
+
+</body>
+</html>
+
+\
